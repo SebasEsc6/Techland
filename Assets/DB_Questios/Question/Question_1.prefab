@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6768757706378210735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3524849378815166220}
+  - component: {fileID: 102399673452134242}
+  m_Layer: 0
+  m_Name: Question_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3524849378815166220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6768757706378210735}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.3371102, y: 0.52101874, z: 57.54839}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &102399673452134242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6768757706378210735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d10eedf17531ea24eb4835bb1d9adcfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: "\xBFQu\xE9 es la pantalla del computador?"
+  options:
+  - cantidadPuntos: 100
+    puntaje: {fileID: 0}
+    text: "El bot\xF3n para encender el computador"
+    correct: 0
+  - cantidadPuntos: 100
+    puntaje: {fileID: 0}
+    text: "La parte del computador que procesa la informaci\xF3n visual"
+    correct: 0
+  - cantidadPuntos: 100
+    puntaje: {fileID: 0}
+    text: "La superficie donde se dibujan las im\xE1genes"
+    correct: 1
+  - cantidadPuntos: 100
+    puntaje: {fileID: 0}
+    text: El lugar donde se conectan los auriculares
+    correct: 0
