@@ -370,6 +370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: 0
   quizManager: {fileID: 59190925}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &316906126 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8578710955291462931, guid: 0c3631d9074f3254f8a2bbadc18c6ffa, type: 3}
@@ -669,6 +670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: 0
   quizManager: {fileID: 59190925}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &466723465
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,7 +721,6 @@ GameObject:
   - component: {fileID: 467249720}
   - component: {fileID: 467249719}
   - component: {fileID: 467249718}
-  - component: {fileID: 467249722}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -812,18 +813,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &467249722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 467249717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a84f13aab9fb0141bd3b4cf166643b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &557185731
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,6 +1297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: 0
   quizManager: {fileID: 59190925}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1375837276
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2186,6 +2176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: 0
   quizManager: {fileID: 59190925}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1762997388 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5621965699427732682, guid: 47195e7f8fc7bb44d92bd50e6aacc803, type: 3}
