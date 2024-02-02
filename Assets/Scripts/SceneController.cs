@@ -46,4 +46,9 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         print("RESET");
     }
+    public void IrMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+        Debug.Log("VA Al MAIN MENU");
+    }
 }
