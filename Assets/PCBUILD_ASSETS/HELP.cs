@@ -25,9 +25,7 @@ public class HELP : MonoBehaviour
     {
         if (Texto.text == "Puntaje: 2")
         {
-            Invoke("Puntaje", 1);
-                      
-           
+            Invoke("Puntaje", 1);   
         }
     }
 
