@@ -17,7 +17,7 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("S_Menu");
         Debug.Log("VA AL MENU");
     }
-    public void IrRompecabeza() 
+    public void IrRompecabeza()
     {
         Debug.Log("VA AL ROMPECABEZA");
         SceneManager.LoadScene("PC_BUILD");
@@ -35,7 +35,7 @@ public class SceneController : MonoBehaviour
         Debug.Log("CIERRA");
     }
 
-    public void Visible() 
+    public void Visible()
     {
         gameObject.SetActive(true);
     }
@@ -49,6 +49,11 @@ public class SceneController : MonoBehaviour
     public void IrMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+        Debug.Log("VA Al MAIN MENU");
+    }
+    public void InitialMenu()
+    {
+        SceneManager.LoadScene("S_Inicio");
         Debug.Log("VA Al MAIN MENU");
     }
 }
