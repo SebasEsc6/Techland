@@ -10,22 +10,19 @@ public class Items : MonoBehaviour
     private Vector2 initialPosition;
     private float deltaX, deltaY;
     public static bool locked;
-    public Text Texto;
-    public Image myPanel;
-    public Color green;
-    public Color red;
-    public int n = 0;
-    // Use this for initializationl
+    private Collider2D itemCollider;
+    [SerializeField]
+    private HELP controller;
+    private const float SNAP_RANGE = 0.5f;
 
     void Start()
     {
         locked = false;
         initialPosition = transform.position;
-        green.a = 1;
-        red.a = 1;
-
+        itemCollider = GetComponent<Collider2D>();
     }
-    private void Update()
+
+    void Update()
     {
         if (Input.touchCount > 0 && !locked)
         {
@@ -35,46 +32,28 @@ public class Items : MonoBehaviour
             switch (touch.phase)
             {
                 case TouchPhase.Began:
-                    if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchPos))
+                    if (itemCollider == Physics2D.OverlapPoint(touchPos))
                     {
                         deltaX = touchPos.x - transform.position.x;
                         deltaY = touchPos.y - transform.position.y;
                     }
                     break;
                 case TouchPhase.Moved:
-                    if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchPos))
-                    {
+                    if (itemCollider == Physics2D.OverlapPoint(touchPos))
                         transform.position = new Vector2(touchPos.x - deltaX, touchPos.y - deltaY);
-                    }
                     break;
-
                 case TouchPhase.Ended:
-                    if (Mathf.Abs(transform.position.x - item.position.x) <= 0.5f && Mathf.Abs(transform.position.y - item.position.y) <= 0.5f)
+                    if (Vector2.Distance(transform.position, item.position) <= SNAP_RANGE)
                     {
-                        transform.position = new Vector2(item.position.x, item.position.y);
+                        transform.position = item.position;
                         locked = true;
-                        Debug.Log("GREEN");
-                        myPanel.color = green;
-                        if (Texto.text == "Puntaje: 0")
-                        {
-                            n++;
-                            Texto.text = "Puntaje: " + n;
-                        }
-                        else
-                        {
-                            n += 2;
-                            Texto.text = "Puntaje: " + n;
-                        }
-
-
-
+                        controller.puntaje += 5;
                     }
                     else
                     {
-                        transform.position = new Vector2(initialPosition.x, initialPosition.y);
+                        transform.position = initialPosition;
                     }
                     break;
-
             }
         }
     }
