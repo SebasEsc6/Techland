@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,24 +8,30 @@ public class Items : MonoBehaviour
 {
     [SerializeField]
     private Transform item;
+    [SerializeField]
+    private GameObject tapa;
+    [SerializeField]
+    private int puntajeItem = 0;
     private Vector2 initialPosition;
     private float deltaX, deltaY;
-    public static bool locked;
+    // public static bool locked;
     private Collider2D itemCollider;
     [SerializeField]
     private HELP controller;
     private const float SNAP_RANGE = 0.5f;
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
-        locked = false;
+        // locked = false;
         initialPosition = transform.position;
         itemCollider = GetComponent<Collider2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
-        if (Input.touchCount > 0 && !locked)
+        if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
             Vector2 touchPos = Camera.main.ScreenToWorldPoint(touch.position);
@@ -46,8 +53,12 @@ public class Items : MonoBehaviour
                     if (Vector2.Distance(transform.position, item.position) <= SNAP_RANGE)
                     {
                         transform.position = item.position;
-                        locked = true;
-                        controller.puntaje += 5;
+                        // locked = true;
+                        spriteRenderer.color = Color.clear;
+                        tapa.SetActive(true);
+                        controller.puntaje += puntajeItem;
+
+                        puntajeItem = 0;
                     }
                     else
                     {
