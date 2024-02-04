@@ -2,7 +2,7 @@
 
 ## Sobre el Sistema Multimedia 🌟
 
-TechMinds busca abordar el bajo aprovechamiento de las tecnologías educativas en la enseñanza, específicamente en el colegio Liceo Bella Suiza. Nuestro enfoque está en crear un sistema interactivo que incluya a todos los estudiantes, independientemente de su condición, mediante interfaces naturales, tipografía legible, instrucciones animadas, actividades sencillas, una paleta de colores llamativa, y música y sonidos adecuados. 
+TechMinds busca abordar el bajo aprovechamiento de las tecnologías educativas en la enseñanza, específicamente en el colegio Liceo Bella Suiza situado en la ciudad de Santiago de Cali, Colombia. Nuestro enfoque está en crear un sistema interactivo multimedia que incluya a todos los estudiantes, independientemente de su condición, mediante interfaces naturales, tipografía legible, instrucciones animadas, actividades sencillas, una paleta de colores llamativa, y música y sonidos adecuados. 
 
 ## Integrantes 👥
 
