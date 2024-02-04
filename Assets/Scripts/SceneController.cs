@@ -56,4 +56,8 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("S_Inicio");
         Debug.Log("VA Al MAIN MENU");
     }
+    public void IrConectaPC()
+    {
+        SceneManager.LoadScene("PC_Connect");
+    }
 }

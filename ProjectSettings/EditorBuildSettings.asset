@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Guess_who.unity
     guid: d32cf5418fbc70449b6afd8b4748960d
+  - enabled: 1
+    path: Assets/Scenes/PC_Connect.unity
+    guid: bac017c971140f74fb1dbb0e9996e3a3
   m_configObjects: {}
