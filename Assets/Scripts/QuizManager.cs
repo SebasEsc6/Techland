@@ -31,13 +31,21 @@ public class QuizManager : MonoBehaviour
 
     }
 
-    public void GameOver(){
+    public void GameOver()
+    {
         QuizPanel.SetActive(false);
-        FEEDBACK.SetActive(true);
-        ScoreTxt.text=score +"/"+ totalQuestions;
+        Invoke("ShowFeedback", 1f); // Invoca la función ShowFeedback después de 1.5 segundos
+    
 
 
     }
+
+    private void ShowFeedback()
+    {
+        FEEDBACK.SetActive(true);
+        ScoreTxt.text = score + "/" + totalQuestions;
+    }
+
 
     public void correct (){
         score +=1;
