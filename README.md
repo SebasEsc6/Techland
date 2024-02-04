@@ -6,10 +6,10 @@ TechMinds busca abordar el bajo aprovechamiento de las tecnologías educativas e
 
 ## Integrantes 👥
 
-- [Mauricio Escobar] (https://www.linkedin.com/in/mauricio-escobar-12a068287/)
-- [Sebastian Escobar] (https://www.linkedin.com/in/sebastian-escobar-192316284/)
-- [Juan Pablo Martínez] (https://www.linkedin.com/in/jpablo-martinez/)
-- [Jesus Alejandro Gil] (https://www.linkedin.com/in/alejandro-gil-murillo-3bb2362b2/)
+- [Mauricio Escobar](https://www.linkedin.com/in/mauricio-escobar-12a068287/)
+- [Sebastian Escobar](https://www.linkedin.com/in/sebastian-escobar-192316284/)
+- [Juan Pablo Martínez](https://www.linkedin.com/in/jpablo-martinez/)
+- [Jesus Alejandro Gil](https://www.linkedin.com/in/alejandro-gil-murillo-3bb2362b2/)
 
 ## Características del Sistema Multimedia 🛠️
 
