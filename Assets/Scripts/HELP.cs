@@ -19,7 +19,7 @@ public class HELP : MonoBehaviour
     void Update()
     {
         puntajeTxt.text = "Puntaje: " + puntaje;
-        if (puntaje == 10)
+        if (puntaje >= 10)
         {
             Invoke(nameof(Puntaje), 1.2f);
         }

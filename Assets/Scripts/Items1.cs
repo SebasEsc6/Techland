@@ -9,22 +9,22 @@ public class Items1 : MonoBehaviour
     private Transform item;
     private Vector2 initialPosition;
     private float deltaX, deltaY;
-    public static bool locked;
     private Collider2D itemCollider;
     [SerializeField]
     private HELP controller;
     private const float SNAP_RANGE = 0.5f;
+    [SerializeField]
+    private int puntajeItem = 0;
 
     void Start()
     {
-        locked = false;
         initialPosition = transform.position;
         itemCollider = GetComponent<Collider2D>();
     }
 
     void Update()
     {
-        if (Input.touchCount > 0 && !locked)
+        if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
             Vector2 touchPos = Camera.main.ScreenToWorldPoint(touch.position);
@@ -46,8 +46,8 @@ public class Items1 : MonoBehaviour
                     if (Vector2.Distance(transform.position, item.position) <= SNAP_RANGE)
                     {
                         transform.position = item.position;
-                        locked = true;
-                        controller.puntaje += 5;
+                        controller.puntaje += puntajeItem;
+                        puntajeItem = 0;
                     }
                     else
                     {
